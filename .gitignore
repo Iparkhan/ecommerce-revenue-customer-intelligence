@@ -1,0 +1,12 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+# Keep raw and processed datasets out of Git; document download steps in README.
+data/*
+!data/.gitkeep
+!data/README.md
+reports/customer_rfm_segments.csv
