@@ -48,4 +48,6 @@ The workbook is not committed; download it from UCI as described above before ru
 
 ## License and attribution
 
+Project code: [MIT License](LICENSE).
+
 Dataset: Chen, D. (2012). *Online Retail II*. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D. CC BY 4.0.
