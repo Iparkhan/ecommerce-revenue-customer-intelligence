@@ -28,7 +28,16 @@ python -m pip install -r requirements.txt
 python src/analyze_retail.py
 ```
 
-The script writes CSV tables and charts to `reports/`. The exploratory notebook is in `notebooks/01_initial_exploration.ipynb`.
+The script writes refreshed CSV tables, charts, and a detailed review to `reports/`. The exploratory notebook is in `notebooks/01_initial_exploration.ipynb`; it includes saved outputs so reviewers can inspect the analysis on GitHub without running it first.
+
+Key deliverables:
+
+- [`reports/executive_summary.md`](reports/executive_summary.md) — findings and business actions to test
+- [`reports/validated_data_review.md`](reports/validated_data_review.md) — data cleaning, return checks, and limitations
+- [`reports/monthly_sales_returns.png`](reports/monthly_sales_returns.png) — monthly sales and returns
+- [`reports/customer_cohort_retention.png`](reports/customer_cohort_retention.png) — repeat purchasing by cohort
+
+The workbook is not committed; download it from UCI as described above before running the analysis. The customer-level RFM export is also kept local and excluded from Git; the aggregate segment summary is included.
 
 ## Repository structure
 
