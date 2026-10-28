@@ -13,6 +13,10 @@ Analyze online retail transactions to understand sales seasonality, returns, cus
 
 The current analysis and business hypotheses are summarized in [`reports/executive_summary.md`](reports/executive_summary.md). Detailed cleaning decisions and caveats are in [`reports/validated_data_review.md`](reports/validated_data_review.md). Results are descriptive, and revenue figures are line-level estimates rather than profit or accounting revenue.
 
+![Portfolio dashboard](reports/portfolio_dashboard.png)
+
+The [product sensitivity review](reports/product_sensitivity_notes.md) shows how service-like rows and an exceptional high-volume item affect product rankings.
+
 ## Data
 
 This project uses [Online Retail II from the UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/502/online_retail%2Bii), by Daqing Chen, licensed under CC BY 4.0. The original workbook covers Dec 2009–Dec 2011. Download `online_retail_II.xlsx` from the official UCI page and place it in `data/`. Raw data are excluded from Git.
@@ -36,6 +40,8 @@ Key deliverables:
 - [`reports/validated_data_review.md`](reports/validated_data_review.md) — data cleaning, return checks, and limitations
 - [`reports/monthly_sales_returns.png`](reports/monthly_sales_returns.png) — monthly sales and returns
 - [`reports/customer_cohort_retention.png`](reports/customer_cohort_retention.png) — repeat purchasing by cohort
+- [`reports/portfolio_dashboard.png`](reports/portfolio_dashboard.png) — one-page overview of sales, markets, retention, and RFM segments
+- [`reports/product_sensitivity.csv`](reports/product_sensitivity.csv) — product ranking sensitivity to service-like lines and the exceptional high-volume item
 
 The workbook is not committed; download it from UCI as described above before running the analysis. The customer-level RFM export is also kept local and excluded from Git; the aggregate segment summary is included.
 

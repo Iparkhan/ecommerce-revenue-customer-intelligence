@@ -1,0 +1,5 @@
+Scenario,PositiveLineSalesGBP,TopProductCode,TopProductDescription,TopProductSalesGBP,Top10ProductSalesShare
+All positive lines,20534115.4880,M,Manual,339988.4600,0.1011
+Exclude service-like descriptions,19536347.8470,22423,REGENCY CAKESTAND 3 TIER,331084.2700,0.0785
+Exclude StockCode 23843 outlier item,20365645.8880,M,Manual,339988.4600,0.0976
+Exclude service-like and StockCode 23843,19367878.2470,22423,REGENCY CAKESTAND 3 TIER,331084.2700,0.0740

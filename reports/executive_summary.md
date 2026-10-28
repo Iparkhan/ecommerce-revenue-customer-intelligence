@@ -13,6 +13,7 @@ This project analyzes two years of transactions from a UK online retailer to und
 - Median next-month cohort retention is **20.4%** across 25 cohorts with a following month available.
 - Cancellation invoice codes and negative quantities disagree in 3,394 rows. Most discordant negative-quantity lines have zero value; one C-coded positive-quantity line is worth GBP 373.57.
 - A single invoice contains 80,995 units of one item, so product demand should be reviewed with and without unusually large orders.
+- Product ranking sensitivity shows why taxonomy matters: `Manual` ranks first when every positive line is included; a heuristic service-description filter moves `REGENCY CAKESTAND 3 TIER` to first place. Excluding the exceptional StockCode 23843 item alone reduces positive line sales by less than 1%.
 
 ## Recommended business actions to test
 
@@ -37,3 +38,5 @@ This project analyzes two years of transactions from a UK online retailer to und
 - Returns, duplicate lines, special stock codes, and exceptional wholesale orders need business validation.
 
 See [validated data review](validated_data_review.md) for detailed figures and [project README](../README.md) for setup and reproducibility.
+
+See [product sensitivity notes](product_sensitivity_notes.md) for the exact alternative totals and the description-filter caveat.
